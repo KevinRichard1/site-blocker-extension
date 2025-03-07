@@ -34,7 +34,7 @@ function urlCheck(userUrls){
 
         overlay.style.width = '100%';
         overlay.style.height = '100%';
-        overlay.style.position = 'fixed';
+        overlay.style.position = 'absolute';
         overlay.style.zIndex = '99999';
         overlay.style.backgroundColor = '#FFFFFF';
         overlay.style.color = '#000000';
@@ -46,16 +46,17 @@ function urlCheck(userUrls){
         
 
         //Add overlay to page
-        document.body.append(overlay);
+        document.body.prepend(overlay);
         console.log("Site blocked");
 
         //Re-add overlay if it has been deleted
-        setInterval(reappend(), 100);
-
-        function reappend(){
+        function reprepend(){
             if(!document.body.contains(overlay)){
-                document.body.append(overlay)
+                document.body.prepend(overlay);
+                console.log("Re-added overlay");
             }
         }
+
+        setInterval(reprepend, 100);
     }
 }
