@@ -1,4 +1,4 @@
-const digitsOfPi = "3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679";
+const password = "3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679";
 
 document.getElementById("saveButton").addEventListener('click', () => {
     //Get user input from popup window
@@ -52,7 +52,7 @@ function deleteUrl(urlToDelete){
     modal.querySelector('button').addEventListener('click', () => {
         const inputString = modal.querySelector('input').value;
 
-        if (inputString === digitsOfPi){
+        if (inputString === password){
             if (typeof browser !== "undefined"){
                 browser.storage.local.get({ userUrls: [] })
                     .then((result) => {
