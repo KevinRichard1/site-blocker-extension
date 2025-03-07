@@ -1,0 +1,27 @@
+body{
+    width: 250px;
+}
+
+.savedUrls{
+    margin-top: 10px;
+    max-height: 200px;
+    max-width: 250px;
+    overflow: auto;
+    gap: 10px;
+}
+
+.savedUrls .url-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+.savedUrls .url-item span{
+    text-decoration: none;
+}
+
+.savedUrls .url-item img{
+    width: 20px;
+    height: 20px;
+}
