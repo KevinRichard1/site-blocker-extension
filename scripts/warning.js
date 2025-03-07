@@ -42,7 +42,7 @@ function urlCheck(userUrls){
         overlay.style.justifyContent = 'center';
         overlay.style.alignItems = 'center';
 
-        overlay.innerHTML = '<h1 style="margin: auto;">This site is blocked</h1>';
+        overlay.innerHTML = '<h1 style="margin:auto; color:#000000;">This site is blocked</h1>';
         
 
         //Add overlay to page

@@ -149,7 +149,7 @@ function updateSavedUrls( userUrls ) {
             savedUrls.innerHTML +=` 
                 <div class="url-item">
                     <span>${url}</span>
-                    <img src="delete_icon.png" alt="" class="deleteButton" data-url="${url}" style="cursor:pointer"/>
+                    <img src="./icons/delete_icon.png" alt="" class="deleteButton" data-url="${url}" style="cursor:pointer"/>
                 </div>
             `;
         });
