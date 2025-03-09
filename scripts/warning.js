@@ -1,8 +1,11 @@
 let userUrls = [];
+let overlayEnabled = false;
 
 //Disable right click on overlay
 document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
+    if (overlayEnabled){
+        e.preventDefault();
+    }
 }, false);
 
 //Get list of saved URLs
@@ -48,6 +51,7 @@ function urlCheck(userUrls){
         //Add overlay to page
         document.body.prepend(overlay);
         console.log("Site blocked");
+        overlayEnabled = true;
 
         //Re-add overlay if it has been deleted
         function reprepend(){
