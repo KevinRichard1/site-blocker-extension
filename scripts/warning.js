@@ -37,7 +37,7 @@ function urlCheck(userUrls){
 
         overlay.style.width = '100%';
         overlay.style.height = '100%';
-        overlay.style.position = 'absolute';
+        overlay.style.position = 'fixed';
         overlay.style.zIndex = '99999';
         overlay.style.backgroundColor = '#FFFFFF';
         overlay.style.color = '#000000';
