@@ -8,7 +8,7 @@ A browser extension to improve productivity
 
 <h3>Customization</h3>
 
-* To customize the overlay message, modify the contents of the h1 tag on line 45 in warning.js
+* To customize the overlay message, modify the contents of the h1 tag in warning.js
 >```overlay.innerHTML = '<h1 style="margin: auto;">This site is blocked</h1>';```
-* To set a custom password, modify the password variable on line 1 in background.js
+* To set a custom password, modify the password variable in background.js
 >```const password = "3.1415926";```
