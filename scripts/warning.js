@@ -55,12 +55,9 @@ function urlCheck(userUrls){
 
         //Re-add overlay if it has been deleted
         function reprepend(){
-            if(!document.body.contains(overlay)){
-                document.body.prepend(overlay);
-                console.log("Re-added overlay");
-            }
+            document.body.prepend(overlay);
         }
 
-        setInterval(reprepend, 100);
+        setInterval(reprepend, 500);
     }
 }
